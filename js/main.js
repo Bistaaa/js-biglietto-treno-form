@@ -54,6 +54,10 @@ genera.addEventListener("click", function() {
 
 
     //CREAZIONE BIGLIETTO
+    
+
+    //far spawnare biglietto
+    document.getElementById("output_biglietto").classList.add("active");
 
     //assegnazione offerta
     document.getElementById("offerta").innerHTML = offerta;

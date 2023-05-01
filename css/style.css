@@ -97,6 +97,14 @@ button:active {
 
 /* OUTPUT BIGLIETTO */
 
+#output_biglietto{
+    display: none;
+}
+
+#output_biglietto.active{
+    display: block;
+}
+
 #lower_box{
     background-color: white;
     padding: 20px;
