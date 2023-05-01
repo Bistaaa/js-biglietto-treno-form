@@ -4,7 +4,7 @@ const kmPrice = 0.21;
 
 //selezione elementi di pagina
 const genera = document.querySelector("#genera");
-console.log(genera);
+const aggiorna = document.getElementById("annulla");
 
 
 
@@ -76,7 +76,9 @@ genera.addEventListener("click", function() {
     //inserire prezzo nel biglietto
     document.getElementById("prezzo_biglietto").innerHTML = ("€" + finalPrice);
 
-
-  });
+});
   
-
+//aggiornamento pagina se cliccato bottone "annulla"
+aggiorna.addEventListener("click", function() {
+    location.href = location.href;
+});
