@@ -1,5 +1,5 @@
 //dichiarqazione variabili
-let chilometri, totalPrice, finalPrice;
+let chilometri, offerta, totalPrice, finalPrice;
 const kmPrice = 0.21;
 
 //selezione elementi di pagina
@@ -31,15 +31,18 @@ genera.addEventListener("click", function() {
     let basePrice = chilometri * kmPrice;
 
 
-    //calcolare il prezzo totale del viaggio
+    //calcolare il prezzo totale del viaggio e tipo offerta
     if (userAge < 18) {
         totalPrice = basePrice * 0.8;
+        offerta = "Biglietto Minor"
         console.log("prezzo minor = €", totalPrice);
     } else if (userAge >= 65){
         totalPrice = basePrice * 0.6;
+        offerta = "Biglietto Senior"
         console.log("prezzo senior = €", totalPrice);
     } else{
         totalPrice = basePrice;
+        offerta = "Biglietto Standard"
         console.log("prezzo normale = €", totalPrice);
     };
 
@@ -52,9 +55,16 @@ genera.addEventListener("click", function() {
 
     //CREAZIONE BIGLIETTO
 
+    //assegnazione offerta
+    document.getElementById("offerta").innerHTML = offerta;
 
+    //assegnazione numero carrozza
+    let numeroCarrozza = Math.floor(Math.random() * 15) + 1;
+    document.getElementById("carrozza").innerHTML = numeroCarrozza;
 
-
+    //assegnazione codice CP
+    let codiceCp = Math.floor(Math.random() * 99999) + 1;
+    document.getElementById("codice").innerHTML = codiceCp;
 
     //inserire nome nel biglietto
     document.getElementById("nome_passeggero").innerHTML = userName;
