@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Biglietto treno</title>
+    </head>
+    <body>
+        <!-- CALCOLO BIGLIETTO -->
+        <section id="calcolo_biglietto">
+            <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+
+            <div id="upper_box">
+                <!-- Data -->
+                <div id="data">
+                    <div class="data_column">
+                        <p class="purple">Nome Cognome</p>
+                        <input type="text" class="input_box" id="name"
+                        placeholder="Inserisci nome e cognome">
+                    </div>
+                    <div class="data_column">
+                        <p class="purple">Km da percorrere</p>
+                        <input type="text" class="input_box" id="km" placeholder="Inserisci distanza">
+                    </div>
+                    <div class="data_column">
+                        <p class="purple">Età passeggero</p>
+                        <input type="text" class="input_box" id="age" placeholder="Inserisci la tua età">
+                    </div>
+                </div>
+                <!-- Buttons -->
+                <div id="buttons_box">
+                    <button class="button" id="genera">Genera</button>
+                    <button class="button" id="annulla">Annulla</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- OUTPUT BIGLIETTO -->
+        <section id="output_biglietto">
+            <h2>IL TUO BIGLIETTO</h2>
+
+            <div id="lower_box">
+                <!-- Dettaglio passeggeri -->
+                <div id="dettaglio_passeggeri">
+                    <h3>NOME PASSEGGERO</h3>
+                    <p id="nome_passeggero"></p>
+                </div>
+                <!-- Dati biglietto -->
+                <div id="dati_biglietto">
+                    <div id="offerta_box">
+                        <h4>Offerta</h4>
+                        <p class="info_biglietto" id="offerta">a</p>
+                    </div>
+                    <div id="carrozza_box">
+                        <h4>Carrozza</h4>
+                        <p class="info_biglietto" id="carrozza">a</p>
+                    </div>
+                    <div id="codice_box">
+                        <h4>Codice CP</h4>
+                        <p class="info_biglietto" id="codice">a</p>
+                    </div>
+                    <div id="prezzo_biglietto_box">
+                        <h4>Costo biglietto</h4>
+                        <p class="info_biglietto" id="prezzo_biglietto">a</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>
+

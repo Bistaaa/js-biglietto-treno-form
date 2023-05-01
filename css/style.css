@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgba(185,20,80,255);
+    padding: 5% 10%;
+}
+
+
+
+
+/* CALCOLO BIGLIETTO */
+
+h2{
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    padding: 40px 0;
+}
+
+#upper_box{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 30px 5% 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 8px 0 black;
+}
+
+/* Data */
+
+#data{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.purple{
+    color: rgba(185,20,80,255);
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.data_column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.input_box{
+    border: 2px solid rgba(185,20,80,255);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 17px;
+    text-align: center;
+}
+
+
+
+
+
+/* Data */
+
+#buttons_box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button{
+    background-color: rgba(204,204,204,255);
+    border: 2px solid rgba(167,167,167,255);
+    color: rgba(185,20,80,255);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.button:hover{
+    border: 2px solid orange;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+  
+
+
+/* OUTPUT BIGLIETTO */
+
+#lower_box{
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+/* Dettaglio passeggeri */
+
+#dettaglio_passeggeri{
+    width: 30%;
+    background-color: rgba(128,128,128,255);
+    border: 2px solid rgba(128,128,128,255);
+    padding: 20px;
+}
+
+h3{
+    font-size: 25px;
+    padding-bottom: 30px;
+}
+
+#nome_passeggero{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+
+
+
+
+/* Dati biglietto */
+
+#dati_biglietto{
+    width: 70%;
+    border: 2px solid rgba(128,128,128,255);
+    border-right: none;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h4{
+    padding-bottom: 40px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.info_biglietto{
+    font-size: 19px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
